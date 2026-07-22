@@ -1,0 +1,84 @@
+{
+  "sections": [
+    {
+      "name": "Work Experience",
+      "items": [
+        {
+          "order": 1,
+          "type": "information",
+          "title": "In-N-Out Burger",
+          "subtitle": "Software Engineering Intern",
+          "dateText": "May 2026 - July 2026",
+          "content": [
+            "Learned Agile for project management, Scrum for sprint tracking and work breakdowns, and Jira to manage workflows.",
+            "Implemented an Angular Resume Website. This website taught me how to used shared components when developing a website, best practices for styling, and how to effectively make a page responsive and user friendly.",
+            "Gained firsthand experience on what daily life is like as a software engineer, and familiarized myself with tools commonly used by developers",
+            "Implemented a full feature in Angular and .Net Core for historical construction documents (blueprints, 360 images, and flat images). This enhanced business operations by providing support centers with historical data to compare previous building specifications to current models. Learn more about it on my projects page!",
+            "{project_storephotos}"
+          ]
+        },
+        {
+          "order": 2,
+          "type": "information",
+          "title": "Tillys",
+          "subtitle": "Seasonal Sales Associate",
+          "dateText": "Winter 2025-2026 | Summer 2025",
+          "content": [
+            "Worked during the busiest times of the year to help the store support back to school shopping, and seasonal gift shopping.",
+            "Handled cash and card transactions, helped guests find what they were searching for, and assisted guests with fitting rooms and shoes.",
+            "Strengthened my teamwork and communication skills as we always had to assist each other on the sales floor.",
+            "Learned the importance of clear communication and gained important customer service skills."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Skills",
+      "items": [
+        {
+          "order": 1,
+          "type": "badgeList",
+          "title": "Languages | Frameworks",
+          "badges": ["Angular", "CSS", "HTML", "Java", "SCSS", "TypeScript"]
+        },
+        {
+          "order": 2,
+          "type": "badgeList",
+          "title": "Tools",
+          "badges": [
+            "VS-Code",
+            "Asana",
+            "Visual Studio",
+
+            "Figma",
+            "Yarn",
+            "Jira",
+            "Confluence",
+            "GitHub"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "information",
+          "title": "Art",
+          "subtitle": "",
+          "content": [
+            "Art is something I've done my entire life. Over the years, I've even been able to do commissions for family and friends. You can see a few of my favorites in my portfolio page!"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Education",
+      "items": [
+        {
+          "order": 1,
+          "type": "information",
+          "title": "California State Polytechnic University, Pomona",
+          "dateText": "August 2025 - May 2028",
+          "content": ["B.S. in Computer Science - in progress"]
+        }
+      ]
+    }
+  ]
+}

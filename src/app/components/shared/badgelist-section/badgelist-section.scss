@@ -1,0 +1,30 @@
+.badge-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.badge-list img {
+  display: block;
+  max-width: 150px;
+  margin: 0.2rem;
+}
+.badge p {
+  display: inline;
+}
+.badge {
+  justify-items: center;
+}
+
+@media (max-width: 850px) {
+  .badge-list {
+    display: flex;
+  }
+  .badge-list img {
+    max-width: 70px;
+    margin: 0.2rem;
+  }
+  .badge p {
+    font-size: 25px;
+  }
+}

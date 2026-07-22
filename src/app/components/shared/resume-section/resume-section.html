@@ -1,0 +1,13 @@
+<div class="section-titles">
+    <h2>{{ resumeSection()?.name }}</h2>
+</div>
+@for(item of resumeSection()?.items; track $index) {
+<div class="boxes">
+    <h3>{{ item.title }}</h3>
+    @if (item.type === sectionTypes.information) {
+    <app-information-section [information]="$any(item)"></app-information-section>
+    } @else if (item.type === sectionTypes.badgeList) {
+    <app-badgelist-section [badgeList]="$any(item).badges"></app-badgelist-section>
+    }
+</div>
+}

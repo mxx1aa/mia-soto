@@ -1,0 +1,8 @@
+<div class="badge-list">
+    @for(badge of badgeList(); track $index) {
+    <div class="badge">
+        <img [src]="badge.url" [alt]="badge.name" />
+        <p>{{badge.name}}</p>
+    </div>
+    }
+</div>

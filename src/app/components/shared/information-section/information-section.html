@@ -1,0 +1,12 @@
+<p>{{ information()?.subtitle }}</p>
+<p>{{ information()?.dateText }}</p>
+<ul>
+    @for(content of information()?.content; track $index) {
+    @if (content == '{project_storephotos}') {
+    <a href="/projects#store-photos" class="BUTTON">Store Photos feature</a>
+    }
+    @else {
+    <li>{{ content }}</li>
+    }
+    }
+</ul>

@@ -1,0 +1,150 @@
+.header {
+  background-color: #dad2c7;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 65px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'pfpOrBack name'
+    'pfpOrBack links';
+  height: 120px;
+  max-width: 100%;
+  &:has(.back) {
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'pfpOrBack name links';
+    justify-items: right;
+    height: 80px;
+  }
+}
+
+.header-item-pfp {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  grid-area: pfpOrBack;
+
+  a {
+    .back {
+      display: flex;
+      margin: 0 10px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .pfp {
+      border-radius: 50%;
+      height: 170px;
+      width: 170px;
+      object-fit: cover;
+      display: block;
+      border: 10px solid #dad2c7;
+    }
+  }
+}
+
+.header-item-name {
+  font-size: 1rem;
+  color: #352722;
+  text-shadow: 0.5px 2px 5px #979696;
+  grid-area: name;
+  margin: 0;
+}
+
+.header-item-links {
+  display: flex;
+  gap: 1.5rem;
+  grid-area: links;
+  padding: 0 1rem;
+  img {
+    max-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.header-item {
+  margin: 0;
+}
+
+.github:hover img,
+.linkedin:hover img,
+.mail:hover img {
+  transform: translateY(-10px);
+}
+
+//------------------------------------------------------------------------------------------------------MEDIA QUERY------------------------------------------------------------------------------------------------------//
+
+@media (min-width: 850px) {
+  .header {
+    //grid-template-columns: 0fr 1fr 2fr;
+    grid-template-columns: auto auto 1fr;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'pfpOrBack name links';
+    max-width: 100%;
+
+    .header-item-links {
+      gap: 3.5rem;
+    }
+
+    &:has(.pfp) {
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 170px;
+    }
+    &:has(.back) {
+      height: 120px;
+    }
+  }
+
+  .header-item-pfp {
+    a {
+      .back {
+        height: 40px;
+        width: 40px;
+        transition: transform 0.2s ease-in-out;
+        /*&:hover {
+        transform: translateY(-10px);
+      }*/
+      }
+
+      .pfp {
+        border-radius: 50%;
+        height: 240px;
+        width: 240px;
+        object-fit: cover;
+        display: block;
+        border: 10px solid #dad2c7;
+      }
+    }
+  }
+
+  .header-item-name {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .header-item-links {
+    margin-bottom: 0;
+    justify-self: right;
+    img {
+      max-height: 100px;
+    }
+  }
+}
+@media (min-width: 960px) {
+  .header {
+    gap: 0.5rem;
+    padding: 0 3rem;
+  }
+  .header-item-links {
+    gap: 3rem;
+  }
+}

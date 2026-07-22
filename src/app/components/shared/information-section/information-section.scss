@@ -1,0 +1,27 @@
+.BUTTON {
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2rem;
+  background-color: #652d2d;
+  border: 5px solid #351f1f;
+  border-radius: 3rem;
+  padding: 0.8rem 0.5rem;
+  text-decoration: none;
+  color: #dad2c7;
+  transition: ease 0.3s;
+}
+
+@media (min-width: 850px) {
+  .BUTTON {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .BUTTON:hover {
+    background-color: #4c2929;
+  }
+
+  .grid-item {
+    max-width: 100px;
+  }
+}

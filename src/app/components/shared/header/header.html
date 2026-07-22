@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="header-item-pfp">
+        <a routerLink="/" routerLinkActive #rla="routerLinkActive" [routerLinkActiveOptions]="{exact: true}">
+            @if (rla.isActive) {
+            <img class="pfp" src="/assets/profilepic/pfp.png" alt="my pfp">
+            } @else {
+            <img class="back" src="/assets/headerlinks/back-button.png" alt="back" />
+            }
+        </a>
+    </div>
+
+    <div class="header-item-name">
+        <h1 class="header-item">Mia Soto</h1>
+    </div>
+
+    <div class="header-item-links">
+        <a class="github" href="https://github.com/mxx1aa" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/headerlinks/github-logo.png" alt="github logo">
+        </a>
+        <a class="linkedin" routerLink="" routerLinkActive="active"> <!--should be href target rel-->
+            <img src="/assets/headerlinks/linkedin-logo.png" alt="linkedin logo">
+        </a>
+        <a class="mail" routerLink="/contact" routerLinkActive="active">
+            <img src="/assets/headerlinks/mail-logo.png" alt="mail logo">
+        </a>
+    </div>
+
+</div>

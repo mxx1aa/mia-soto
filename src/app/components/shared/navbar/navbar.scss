@@ -1,0 +1,84 @@
+// ----------------------------------------------------------------NAVBAR--------------------------------------------------------------- //
+.navbar {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #dad2c7;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  padding: 0.4rem 0;
+  outline: solid 5px #191919;
+  align-items: center;
+  max-width: 100%;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  text-align: center;
+  margin: 0;
+  font-size: 1.6rem;
+  background-color: #dad2c7;
+  border: 5px solid #352722;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #352722;
+  transition: background ease 0.3s;
+  transition: color ease 0.5s;
+  text-shadow: 0.5px 2px 5px #979696;
+  &.active {
+    padding: 0.5rem 0.5rem;
+    font-size: 35px;
+  }
+  &:hover {
+    background-color: #352722;
+    color: #dad2c7;
+    text-shadow: none;
+  }
+}
+
+.home-nav-item {
+  text-align: center;
+  margin: 0;
+  font-size: 1.6rem;
+  background-color: #dad2c7;
+  border: 5px solid #352722;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #352722;
+}
+
+//------------------------------------------------------------------------------------------------------MEDIA QUERY------------------------------------------------------------------------------------------------------//
+@media (min-width: 850px) {
+  .navbar {
+    gap: 0.6rem;
+    outline: 0.5rem solid #191919;
+    padding: 1.1rem 1.4rem;
+    justify-self: center;
+  }
+  .nav-item {
+    padding: 0.6rem 3rem;
+    font-size: 2.4rem;
+    border: 8px solid #352722;
+    &.active {
+      padding: 0.9rem 2.5rem;
+      font-size: 3.8rem;
+      text-shadow: none;
+    }
+  }
+  .home-nav-item {
+    text-decoration: none;
+    color: #352722;
+    padding: 0.9rem 2.5rem;
+    font-size: 3.1rem;
+    border: 8px solid #352722;
+    transition: background ease 0.3s;
+    transition: color ease 0.5s;
+    text-shadow: 0.5px 2px 5px #979696;
+    &:hover {
+      background-color: #352722;
+      color: #dad2c7;
+      text-shadow: none;
+    }
+  }
+}

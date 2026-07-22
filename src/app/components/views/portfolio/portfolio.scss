@@ -1,0 +1,37 @@
+.image-grid {
+  column-count: 2;
+  padding: 0px;
+  column-gap: 10px;
+  max-width: 90%;
+  justify-self: center;
+}
+
+.grid-item {
+  break-inside: avoid;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: #351f1f;
+  border: 7px solid #191919;
+}
+
+.grid-item img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 850px) {
+  .image-grid {
+    column-count: 5;
+    column-gap: 25px;
+    max-width: 100%;
+    padding: 40px;
+  }
+  .grid-item {
+    transition: 0.2s ease border;
+    &:hover {
+      border: 7px solid #dad2c7;
+    }
+  }
+}
