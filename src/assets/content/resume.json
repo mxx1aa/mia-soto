@@ -7,6 +7,18 @@
           "order": 1,
           "type": "information",
           "title": "In-N-Out Burger",
+          "subtitle": "Level 1 Associate",
+          "dateText": "August 2026 - Present",
+          "content": [
+            "Worked as a team to provide excellent customer service and ensure that all guests had a positive experience.",
+            "Learned how to work in a fast-paced environment, and how to effectively communicate with team members and guests.",
+            "Gained experience in food preparation, cash handling, and customer service."
+          ]
+        },
+        {
+          "order": 2,
+          "type": "information",
+          "title": "In-N-Out Burger",
           "subtitle": "Software Engineering Intern",
           "dateText": "May 2026 - July 2026",
           "content": [
@@ -15,7 +27,11 @@
             "Gained firsthand experience on what daily life is like as a software engineer, and familiarized myself with tools commonly used by developers",
             "Implemented a full feature in Angular and .Net Core for historical construction documents (blueprints, 360 images, and flat images). This enhanced business operations by providing support centers with historical data to compare previous building specifications to current models. Learn more about it on my projects page!",
             "{project_storephotos}"
-          ]
+          ],
+          "subtitle2": "test",
+          "dateText2": "test",
+          "content2": ["test"]
+
         },
         {
           "order": 2,
